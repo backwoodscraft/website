@@ -97,7 +97,33 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="Signin%20Template%20%C2%B7%20Bootstrap%20v5.3_files/sign-in.css" rel="stylesheet">
+    <style>
+        html,
+body {
+  height: 100%;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+    </style>
   </head>
   <body class="d-flex align-items-center py-4 bg-body-tertiary">
       
@@ -107,12 +133,12 @@
     <h3 class="h5 mb-5 fw-normal">Let us send you emails of upcoming event and sales</h3>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" name="emailAddress" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
+      <input type="email" class="form-control" id="floatingInput" name="emailAddress" placeholder="name@example.com"><br>
+      <label for="floatingInput">Email address</label><br>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" name="entry.287817085" placeholder="Full Name">
-      <label for="floatingPassword">Name</label>
+      <input type="password" class="form-control" id="floatingPassword" name="entry.287817085" placeholder="Full Name"><br>
+      <label for="floatingPassword">Name</label><br><br>
     </div>
     <button class="btn btn-primary w-100 py-2" type="submit">Subscribe Now</button>
     <p class="mt-5 mb-3 text-body-secondary">©2023-2033</p>
